@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../styles/Dashboard.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="150.0" styleClass="menu-vbox" HBox.hgrow="NEVER">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="150.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/profile.png" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="inbox-label" text="Inbox" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Button alignment="TOP_LEFT" graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="149.0" styleClass="menu-button" text="All Messages">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/message.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="149.0" styleClass="menu-button" text="Unread">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/unread.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="149.0" styleClass="menu-button" text="Groups">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/group.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+               </padding>
+            </Button>
+            <Separator prefWidth="200.0" />
+            <Button alignment="TOP_LEFT" graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="149.0" styleClass="menu-button" text="Helps">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/help.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="149.0" styleClass="menu-button" text="Settings">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button alignment="TOP_LEFT" graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleLogoutAction" prefHeight="50.0" prefWidth="149.0" styleClass="menu-button" text="Log Out">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="250.0" styleClass="users-vbox" HBox.hgrow="NEVER">
+         <children>
+            <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="250.0" styleClass="search-hbox" VBox.vgrow="NEVER">
+               <children>
+                  <TextField fx:id="searchField" prefWidth="230.0" promptText="Search" styleClass="search-field" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <ListView fx:id="userListView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="400.0" styleClass="profile-hbox" VBox.vgrow="NEVER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="profileLabel" styleClass="profile-name-label" text="Sadat Rafsanjani" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button id="buzz-button" fx:id="buzzButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleShakeAction" prefHeight="40.0" prefWidth="40.0" />
+                        <Button id="call-button" fx:id="callButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <TabPane fx:id="tabPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" VBox.vgrow="ALWAYS" />
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="324.0" spacing="10.0" styleClass="input-hbox">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="NEVER">
+                     <children>
+                        <Button id="image-button" fx:id="picButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handlePictureBrowse" prefHeight="40.0" prefWidth="40.0" />
+                        <Button id="file-button" fx:id="fileButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <TextField id="message-field" fx:id="messageField" prefHeight="40.0" prefWidth="156.0" promptText="Type Your Message" HBox.hgrow="ALWAYS" />
+                  <Button id="send-button" fx:id="sendButton" mnemonicParsing="false" onAction="#handleMessageAction" prefHeight="32.0" prefWidth="32.0">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/send.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children></VBox>
+   </children>
+</HBox>

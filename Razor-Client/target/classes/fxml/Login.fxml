@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="760.0" stylesheets="@../styles/Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sadat.razor.controller.LoginController">
+   <children>
+      <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="380.0" styleClass="leftVbox" HBox.hgrow="ALWAYS">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label styleClass="welcomeLabel" text="WELCOME TO">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label styleClass="razorLabel" text="RAZOR">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="286.0" text="Log in to share the moment of your life on the things that interest you" textAlignment="CENTER" wrapText="true" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </VBox>
+            <GridPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="280.0" VBox.vgrow="NEVER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="usernameField" prefHeight="30.0" prefWidth="171.0" promptText="Username" styleClass="username" />
+                  <PasswordField fx:id="passwordField" prefHeight="30.0" prefWidth="171.0" promptText="Password" styleClass="password" GridPane.rowIndex="1" />
+                    <Button fx:id="button" onAction="#handleLoginAction" prefHeight="30.0" prefWidth="280.0" styleClass="login-button" text="LOG IN" GridPane.rowIndex="2" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Don't have an account?" />
+                  <Hyperlink onAction="#handleRegisterAction" styleClass="registerLabel" text="Sign Up Now" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="380.0" styleClass="rightVbox" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+            <Label styleClass="razorLabel-invert" text="RAZOR" />
+            <Label fx:id="errorLabel" styleClass="erroLable" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

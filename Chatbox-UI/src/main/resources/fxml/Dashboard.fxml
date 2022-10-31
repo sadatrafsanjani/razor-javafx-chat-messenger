@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox prefHeight="502.0" prefWidth="689.0" stylesheets="@../styles/Dashboard.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sadat.chatbox.FXMLController">
+   <children>
+      <VBox prefHeight="502.0" prefWidth="150.0" styleClass="menu-vbox">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="151.0">
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/profile.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label styleClass="inbox-label" text="Inbox" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Button graphicTextGap="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="menu-button" text="All Messages">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/message.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="menu-button" text="Unread">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/unread.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="menu-button" text="Groups">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/group.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator prefWidth="200.0" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="menu-button" text="Helps">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/help.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="menu-button" text="Settings">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="menu-button" text="Log Out">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <VBox prefHeight="502.0" prefWidth="215.0" styleClass="users-vbox">
+         <children>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="215.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="186.0" promptText="Search" />
+               </children>
+            </HBox>
+            <ListView prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="chatbox-vbox" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>

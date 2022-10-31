@@ -1,0 +1,22 @@
+.inbox-label {
+    
+    -fx-font-size: 18;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+.menu-vbox, .users-vbox {
+    
+    -fx-background-color: #000000;
+}
+
+.menu-button {
+    
+    -fx-background-color: #000000;
+    -fx-text-fill: #F1F1F1;
+}
+
+.chatbox-vbox {
+    
+    -fx-background-color: gray;
+}

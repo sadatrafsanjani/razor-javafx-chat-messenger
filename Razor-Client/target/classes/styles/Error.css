@@ -1,0 +1,9 @@
+#master {
+
+    -fx-background-color: #E82C23;
+}
+
+.label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+}

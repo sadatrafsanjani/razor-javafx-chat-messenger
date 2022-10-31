@@ -1,0 +1,211 @@
+.inbox-label {
+
+    -fx-font-size: 18;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+.menu-vbox, .users-vbox {
+
+    -fx-background-color: #000000;
+}
+
+.menu-vbox {
+
+    -fx-border-style: solid;
+    -fx-border-color: transparent #3366ff transparent transparent;
+    -fx-border-width: 0 1 0 0;
+}
+
+.menu-button {
+
+    -fx-background-color: #000000;
+    -fx-text-fill: #F1F1F1;
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-font-size: 16;
+}
+
+.menu-button:hover {
+
+    -fx-background-color: #207BCF;
+}
+
+
+.separator .line { 
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #3366ff;
+    -fx-background-color: transparent;
+}
+
+.chatbox-vbox {
+
+    -fx-background-color: #D9D9D9;
+}
+
+.input-hbox {
+
+    -fx-background-color: #FFFFFF;
+}
+
+.profile-hbox {
+
+    -fx-border-style: solid;
+    -fx-border-color: transparent transparent #3366ff transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: #D9D9D9;
+}
+
+.profile-name-label {
+
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+
+}
+
+.search-hbox {
+
+    -fx-border-style: solid;
+    -fx-border-color: transparent transparent #3366ff transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.search-field {
+
+    -fx-font-size: 16;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #333333;
+    -fx-border-color: transparent;
+}
+
+.scrollpane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.list-view {
+
+    -fx-background-color: #000000;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-font-size: 16;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+.list-cell:even, .list-cell:odd {
+
+    -fx-background-color: #000000;
+    -fx-text-fill: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}
+
+.chatbox{
+
+    -fx-background-color: #FFFFFF;
+}
+
+.label-sender {
+
+    -fx-background-color: #F1F1F1;
+    -fx-text-fill: #333333;
+    -fx-pref-width: 300px;
+    -fx-border-radius: 10; 
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-font: 20px harrington;
+    -fx-padding: 10;
+}
+
+.label-receiver {
+
+    -fx-background-color: #00AF50;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 300px;
+    -fx-border-radius: 10; 
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-font: 20px harrington;
+    -fx-padding: 10;
+}
+
+#buzz-button {
+
+    -fx-background-image: url('../image/buzz.png');
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0;
+}
+
+#call-button {
+
+    -fx-background-image: url('../image/call.png');
+    -fx-background-size: 80%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0;
+}
+
+#image-button {
+
+    -fx-background-image: url('../image/image.png');
+    -fx-background-size: 80%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0;
+}
+
+#file-button {
+
+    -fx-background-image: url('../image/file.png');
+    -fx-background-size: 80%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0;
+}
+
+#buzz-button:hover, #call-button:hover, #image-button:hover, #file-button:hover {
+
+    -fx-background-color: #cc99ff;
+}
+
+#message-field {
+    
+    -fx-font-family: "Tahoma";
+    -fx-font-size: 18px; 
+    -fx-font-smoothing-type: lcd;
+}
+
+
+#send-button {
+    
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-background-color: #2ecc71;
+    -fx-border-color: #2ecc71;
+}
+
+#send-button:hover {
+    
+    -fx-background-color: #ec644b;
+    -fx-border-color: #ec644b;
+}

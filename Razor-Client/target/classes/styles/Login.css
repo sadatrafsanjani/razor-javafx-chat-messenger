@@ -1,0 +1,81 @@
+.welcomeLabel {
+
+    -fx-text-fill: #666666;
+}
+
+.razorLabel {
+
+    -fx-text-fill: #BD5961;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 36px;
+}
+
+.razorLabel-invert {
+
+    -fx-text-fill: #F1F1F1;
+    -fx-font-family: "Verdana";
+    -fx-font-size: 36px;
+}
+
+.leftVbox {
+
+    -fx-background-color: #FFFFFF;
+}
+
+.rightVbox {
+
+    -fx-background-color: #CA5A44;
+}
+
+.login-button {
+
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    -fx-text-fill: #F1F1F1;
+    -fx-border-style: solid;
+    -fx-border-color: #E82C23;
+    -fx-background-color: #E82C23;
+}
+
+.login-button:hover {
+
+    -fx-border-color: #666666;
+    -fx-background-color: #666666;
+
+}
+
+.registerLabel {
+
+    -fx-text-fill: #C17C77;
+}
+
+.registerLabel:hover {
+
+    -fx-text-fill: #ff00ff;
+}
+
+.username {
+
+    -fx-background-image:url('../image/username.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+    -fx-background-size: 8%;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 14px;
+}
+
+.password {
+
+    -fx-background-image:url('../image/password.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+    -fx-background-size: 8%;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 14px;
+}
+
+.erroLable {
+    
+    -fx-text-fill: #F1F1F1;
+    -fx-font-size: 16px;
+}
